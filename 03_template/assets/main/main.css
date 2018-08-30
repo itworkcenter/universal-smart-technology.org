@@ -528,7 +528,9 @@ header .navigation li a {
 footer {
     text-align: center;
 }
-
+.footer-list{
+    font-weight: bold;
+}
 * {
     /* outline: 1px solid #999; */
 }
