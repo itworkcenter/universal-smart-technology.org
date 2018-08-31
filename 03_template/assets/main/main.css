@@ -415,7 +415,13 @@ p+p {
     align-items: center;
     justify-content: center;
 }
-
+.form-box{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.form-box >.form-group > label{
+    font-weight: bold;
+}
 /* END: BOOTSTRAP OVERRIDE====================== */
 /* PUBLIC */
 .clear:after,
