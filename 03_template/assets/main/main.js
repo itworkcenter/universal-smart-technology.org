@@ -81,7 +81,6 @@
     }
 
     function change($from) {
-        console.log($from)
         var result = getToResult($from);
         if (result.active) {
             $from.removeClass("active");
