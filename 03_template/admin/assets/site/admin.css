@@ -1,0 +1,199 @@
+/* START Public=============================== */
+* {
+  /* outline: 1px solid #999; */
+}
+
+html,
+body {
+  font-size: 12px;
+  padding:0;
+}
+
+a:hover {}
+
+.container {
+  padding: 0;
+  max-width: none !important;
+  min-width: 992px !important;
+}
+
+/* END Public=============================== */
+
+/* START Module=============================== */
+.admin-container:before,
+.admin-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.admin-container {
+  position: relative;
+  display: table;
+  width: 100%;
+}
+
+.admin-container>* {
+  display: table-cell;
+  vertical-align: top;
+}
+.admin-container.page{
+  min-height: 100%;
+}
+
+.admin-side {
+  width: 180px;
+}
+
+.admin-content {}
+.page > .admin-side {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #f2f2f2;
+  border-right: 1px solid #ccc;
+}
+.page > .admin-content {
+  display: block;
+  min-height: 100%;
+  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 180px;
+}
+/* MENU BOX */
+
+.menu-box{
+  display: table;
+}
+.menu-box >* {
+  display: table-cell;
+  vertical-align: middle;
+}
+.menu-box-icon{
+  font-size: 18px;
+}
+.menu-box-text{
+  padding: 0 10px;
+  width: 100%;
+}
+.menu-box-subicon{
+  font-size: 18px;
+}
+
+/* COLLAPSE NAV */
+.collapse-nav ul.submenu{
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height .5s linear;
+  -moz-transition: height .5s linear;
+  -o-transition: height .5s linear;
+  transition: height .5s linear;
+}
+.collapse-nav .active > ul.submenu{
+  display: block;
+  height: auto;
+}
+.collapse-nav > li + li{
+  border-top: 1px solid #dcdcdc;
+}
+.collapse-nav > li > a:hover{
+  background-color: white;
+}
+.collapse-nav  li > a{
+  display: table;
+  padding: 5px 10px;
+}
+.collapse-nav > li.active > a{
+  background-color: #e6e6e6;
+}
+.collapse-nav > li.active > a > *{
+  color: black;
+  font-weight: bold;
+}
+.collapse-nav > li > a{
+  background-color: #f4f4f4;
+}
+
+.collapse-nav li > ul.submenu{
+  background-color: white;
+}
+.collapse-nav li > ul.submenu > li > a{
+  padding-left: 20px;
+}
+
+.seperate{
+  position: relative;
+  width: 50px!important;
+  height: 25px;
+}
+.seperate:after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  display: block;
+  height: 100%;
+  border-right: 1px solid #ced4da;
+}
+
+.card-header{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+/* END MODULE=============================== */
+
+
+/* START ADMIN=============================== */
+.admin-header {}
+
+.admin-body>.container {}
+
+.admin-body .admin-content {
+  padding: 20px;
+}
+.admin-side .nav {
+  display: block;
+}
+
+.admin-content > .card + .card{
+  margin-top: 20px;
+}
+.admin-head > * {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+.admin-head > * + *{
+  margin-left: 10px;
+}
+.admin-head{
+  margin-bottom: 30px;
+}
+.admin-head .btn{
+  border: 1px solid #dbdbdb;
+}
+.admin-link,
+.admin-action{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.admin-action .btn{
+  border: 1px solid #dbdbdb;
+}
+.admin-action > * {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+.admin-info{
+  margin: 20px 0;
+  color: #222;
+}
+.admin-add{
+  margin-bottom: 30px;
+}
+#editor{
+  height:400px;
+}
+/* END ADMIN=============================== */

@@ -18,8 +18,9 @@
   <title>Universal Smart Technology</title>
 
   <link rel="stylesheet" type="text/css" href="./assets/bootstrap/bootstrap.css" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i">
   <link rel="stylesheet" type="text/css" href="./assets/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/module/module.css" />
   <link rel="stylesheet" type="text/css" href="./assets/site/base.css" />
   <link rel="stylesheet" type="text/css" href="./assets/site/main.css" />
 </head>
@@ -37,7 +38,7 @@
           <div class="al-right header-info">
             <div class="header-login">
               <div class="btn-group">
-                <a  class="btn btn-secondary" href="index.html">Home</a>
+                <a class="btn btn-secondary" href="index.html">Home</a>
                 <a class="btn btn-secondary" href="login.html">Sign In</a>
                 <a class="btn btn-secondary" href="register.html">Register</a>
               </div>
@@ -80,37 +81,50 @@
       </div>
     </div>
   </header>
-  
+
   <section>
     <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-              <div class="box-show box-show--green center">
-                  <div class="box-show-title"> Login In</div>
-                  <div class="box-show-content">
-                      <form action="/brochure/contact" method="POST">
-                        <div class="form-group mb-2">
-                          <label for="inputPassword2">Username:</label>
-                          <input class="form-control" type="text" id="username" name="username" placeholder="Username">
-                        </div>
-                        <div class="form-group mb-2">
-                          <label for="inputPassword2">E-Mail:</label>
-                          <input class="form-control" type="text" id="email" name="email" placeholder="E-Mail">
-                        </div>
-                        <div class="form-group mb-2">
-                          <label for="inputPassword2">Password</label>
-                          <input class="form-control" type="text" id="password" name="password" placeholder="Password">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Sign In</button>
-                      </form>
-                  </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="box-show box-show--green center">
+            <div class="box-show-title"> Login In</div>
+            <div class="box-show-content">
+              <form action="manage/admin.html" method="POST">
+                <div class="form-group mb-2">
+                  <label for="inputPassword2">Username:</label>
+                  <input class="form-control" type="text" id="username" name="username" placeholder="Username">
                 </div>
-                <div class="col-md-6">
-
+                <div class="form-group mb-2">
+                  <label for="inputPassword2">E-Mail:</label>
+                  <input class="form-control" type="text" id="email" name="email" placeholder="E-Mail">
                 </div>
+                <div class="form-group mb-2">
+                  <label for="inputPassword2">Password</label>
+                  <input class="form-control" type="text" id="password" name="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Sign In</button>
+              </form>
+            </div>
           </div>
+
         </div>
-        
+        <div class="col-md-6">
+          <div class="box-show">
+            <div class="box-show-title">Welcome to Universal Smart Technology</div>
+            <div class="box-show-content">
+              <div class="article">
+                <p>
+                  Participation in AGORACOM’s General Forums is a privilege and not a right. Though we have used a
+                  lighter side in getting our point across, contravention of any of the following will lead to
+                  automatic termination of forum privileges:
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </section>
   <footer>
@@ -129,11 +143,5 @@
 </html>
 <script src="./assets/jquery/jquery.js"></script>
 <script src="./assets/bootstrap/bootstrap.js"></script>
+<script src="./assets/module/module.js"></script>
 <script src="./assets/site/main.js"></script>
-<script>
-  // $('.nav-tabs a ').click(function (e) {
-  //     e.preventDefault()
-  //     $(this).tab('show')
-  // })
-  $('.carousel').carousel()
-</script>
