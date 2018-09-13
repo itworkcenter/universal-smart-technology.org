@@ -1,0 +1,41 @@
+.card-header{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+label{
+  font-weight: bold;
+}
+.user-content > * +*,
+.user-side > * + *{
+  margin-top: 20px;
+}
+.user-side{
+  margin-bottom: 20px;
+}
+.user-menu a >i {
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 18px;
+}
+.user-menu a > *:nth-child(2){
+  text-align: left;
+  -webkit-flex-grow: 3;
+  flex-grow: 3;
+}
+.user-head > *{
+  display: inline-block;
+  vertical-align: middle;
+}
+.user-head > *+ *{
+  margin-left: 10px;
+}
+.user-head{
+  margin-bottom: 30px;
+}
+.user-head-title{
+  font-size: 24px;
+  font-weight: bold;
+}
+.user-action{
+  margin: 20px 0;
+}

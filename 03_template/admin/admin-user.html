@@ -55,7 +55,7 @@
                                         Welcome Admin!
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        
+
                                         <a class="dropdown-item" href="#">Edit My Profile</a>
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="#">Log Out</a>
@@ -73,7 +73,7 @@
             <div class="admin-container page">
                 <div class="admin-side">
                     <ul class="nav nav-list collapse-nav">
-                        <li>
+                        <li class="active">
                             <a href="admin-index.html" class="menu-box">
                                 <div class="menu-box-icon">
                                     <i class="fa fa-folder normal"></i>
@@ -121,8 +121,52 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="#" class="menu-box">
+                                <div class="menu-box-icon">
+                                    <i class="fa fa-folder normal"></i>
+                                </div>
+                                <span class="menu-box-text menu-text">Pages</span>
+                                <div class="menu-box-subicon">
+                                    <b class="arrow fa fa-angle-right"></b>
+                                </div>
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a class="menu-box" href="admin-page.html">
+                                        <div class="menu-box-icon"><i class="fa fa-caret-right"></i></div>
+                                        <span class="menu-box-text menu-text">All Pages</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-box">
+                                <div class="menu-box-icon">
+                                    <i class="fa fa-folder normal"></i>
+                                </div>
+                                <span class="menu-box-text menu-text">Message</span>
+                                <div class="menu-box-subicon">
+                                    <b class="arrow fa fa-angle-right"></b>
+                                </div>
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a class="menu-box" href="admin-message.html">
+                                        <div class="menu-box-icon"><i class="fa fa-caret-right"></i></div>
+                                        <span class="menu-box-text menu-text">All Messages</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-box" href="admin-message-send.html">
+                                        <div class="menu-box-icon"><i class="fa fa-caret-right"></i></div>
+                                        <span class="menu-box-text menu-text">Send Message</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="admin-user.html" class="menu-box">
                                 <div class="menu-box-icon">
                                     <i class="fa fa-folder normal"></i>
                                 </div>
@@ -158,9 +202,27 @@
                             </a>
                             <ul class="submenu">
                                 <li>
-                                    <a class="menu-box" href="javascript:openapp('/admin/goods/index','190Admin','商品管理',true);">
+                                    <a class="menu-box" href="admin-setting.html">
                                         <div class="menu-box-icon"><i class="fa fa-caret-right"></i></div>
                                         <span class="menu-box-text menu-text">General</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-box" href="admin-setting-banner.html">
+                                        <div class="menu-box-icon"><i class="fa fa-caret-right"></i></div>
+                                        <span class="menu-box-text menu-text">Banners</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-box" href="admin-setting-social.html">
+                                        <div class="menu-box-icon"><i class="fa fa-caret-right"></i></div>
+                                        <span class="menu-box-text menu-text">Socials</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menu-box" href="admin-setting-social.html">
+                                        <div class="menu-box-icon"><i class="fa fa-caret-right"></i></div>
+                                        <span class="menu-box-text menu-text">Links</span>
                                     </a>
                                 </li>
                             </ul>
@@ -190,7 +252,7 @@
                         <button type="button" class="btn btn-light">Apply</button>
 
                     </div>
-                    <table class="table">
+                    <table class="table table-striped">
                         <thead>
                             <tr>
                                 <th scope="col"><input type="checkbox"></th>
